@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+</head>
+<body>
+    <h1>amader sathe jogajog korun</h1>
+    <p>nicher from puron korun , amra 24 ghontar modde sara dibo |</p>
+
+    <from> action="/contact" method="Post"
+        <fieldest>
+
+            <legend> apnar details </legend>
+
+            
+        <p>
+            <label for="name"> Full name *</label><br/>
+            <input type="text" id="name" name="name" required minlength="3" placeholder="john doe" />
+        </p>
+
+         <p>
+            <label for="email"> Email *</label> <br />
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+         </p>
+
+         <p>
+            <label for="phone">Phone number</label><br />
+            <input type="tel" id="phone" name="phone" pattern="[0-9]" placeholder="01700000000" />
+
+         </p>
+            
+        </fieldest>
+        <fieldse>
+            <legend>Barta</legend>
+            <p>
+                <label for="subject">Bisoy</label><br/>
+                <select id="subject" name="subject" required>
+                <option value="">--Beche nin--</option>
+                <option value="general">common question</option>
+                <option value="support">Technical support</option>
+                <option value="feedback"> Feedback</option>
+        
+                </select>
+            </p>
+
+            <p>
+                <label for="msg">apnar barta*</label><br/>
+                <textarea id="msg" name="msg" rows="5" cols="40" required minlength="10"></textarea>
+            </p>
+
+        </fieldse>
+
+        <button type="submit">pathan</button>
+        <button type="reset">Clear</button>
+    </from>
+</body>
+</html>
